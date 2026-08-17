@@ -46,31 +46,17 @@ body {
     margin-bottom: 40px;
 }
 
-
-/* =============================================
-   QUESTAO 1 - FLEXBOX NO HEADER
-
-   O header precisa alinhar 3 elementos em
-   uma linha: logo, navegacao e botao.
-
-   Instrucoes:
-   - Transforme .header em um flex container
-     (use display: flex)
-   - Alinhe os itens verticalmente ao centro
-     (use align-items)
-   - Distribua o espaco entre os itens
-     (use justify-content: space-between)
-   ============================================= */
-
 .header {
     background-color: #1a1a2e;
     padding: 15px 40px;
     position: sticky;
     top: 0;
     z-index: 100;
-    /* ESCREVA SEU CODIGO AQUI */
-}
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -139,17 +125,23 @@ body {
 .hero-subtitulo {
     color: #e67e22;
     margin-bottom: 15px;
-    /* ESCREVA SEU CODIGO AQUI */
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 .hero-titulo {
     color: white;
     margin-bottom: 20px;
-    /* ESCREVA SEU CODIGO AQUI */
+    font-size: 3rem;
+    line-height: 1.2;
 }
 
 .texto-destaque {
-    /* ESCREVA SEU CODIGO AQUI */
+    color: #e67e22;
+    text-decoration: underline;
+    text-decoration-color: #e67e22;
+    text-underline-offset: 5px;
 }
 
 .hero-descricao {

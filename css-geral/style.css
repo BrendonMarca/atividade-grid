@@ -455,39 +455,41 @@ body {
     overflow: hidden;
 }
 
-/* =============================================
-   QUESTAO 10 - RESPONSIVIDADE COM MEDIA QUERIES
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
 
-   Torne o site responsivo para telas menores.
+    .hero {
+        padding: 50px 20px;
+    }
 
-   Instrucoes:
-   Crie uma media query para telas ate 768px:
-   - .header: mude flex-direction para column
-     e gap de 15px
-   - .hero: padding de 50px 20px
-   - .hero-titulo: font-size de 2rem
-   - .hero-numeros: flex-direction column e gap 20px
-   - .diferenciais-container: flex-direction column
-   - .prato-card: flex de 1 1 100%
-     (cada card ocupa a largura toda)
-   - .depoimentos-container: flex-direction column
-   - .footer-topo: flex-direction column e gap 30px
-   ============================================= */
+    .hero-titulo {
+        font-size: 2rem;
+    }
 
-/* ESCREVA SEU CODIGO AQUI */
+    .hero-numeros {
+        flex-direction: column;
+        gap: 20px;
+    }
 
+    .diferenciais-container {
+        flex-direction: column;
+    }
 
-/* =============================================
-   SECAO CTA E FOOTER
-   (ja estilizados - nao precisa mexer aqui,
-   exceto no gradiente da .cta na questao 3)
-   ============================================= */
+    .prato-card {
+        flex: 1 1 100%;
+    }
 
-.cta {
-    padding: 80px 40px;
-    text-align: center;
-    color: white;
-    /* O gradiente da questao 3 vai aqui */
+    .depoimentos-container {
+        flex-direction: column;
+    }
+
+    .footer-topo {
+        flex-direction: column;
+        gap: 30px;
+    }
 }
 
 .cta h2 {
